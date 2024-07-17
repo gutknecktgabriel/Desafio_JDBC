@@ -1,12 +1,11 @@
-package Conexao;
+package conexao;
 
-import javax.management.RuntimeErrorException;
 import java.sql.*;
 
 public class ConexaoBanco {
     private static final String drive = "org.postgresql.Driver";
     private static final String url = "jdbc:postgresql://localhost:5432/DesafioOlv";
-    private static final String usuario = "postgresql";
+    private static final String usuario = "postgres";
     private static final String senha = "1234";
 
 
