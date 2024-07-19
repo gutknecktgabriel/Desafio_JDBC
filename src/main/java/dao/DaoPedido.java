@@ -13,8 +13,8 @@ public class DaoPedido {
     public List<Pedido> findAll() {
         List<Pedido> list = new ArrayList<>();
         Connection con = ConexaoBanco.getConnection();
-        PreparedStatement pstm = null;
-        ResultSet rs = null;
+        PreparedStatement pstm;
+        ResultSet rs;
 
         try {
             pstm = con.prepareStatement("SELECT * FROM pedido");
